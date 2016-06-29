@@ -1,0 +1,22 @@
+{
+  "name": "twitter_machine_learning_bot",
+  "version": "1.0.0",
+  "description": "Pulls and analyzes tweets to provide insights and show trends on what content invokes a greater response/is better received.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eltonlaw/twitterMachineLearningBot.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/eltonlaw/twitterMachineLearningBot/issues"
+  },
+  "homepage": "https://github.com/eltonlaw/twitterMachineLearningBot#readme",
+  "dependencies": {
+    "twitter-node-client": "0.0.6"
+  }
+}
