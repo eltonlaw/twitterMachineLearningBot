@@ -10,19 +10,16 @@ var config = {
 };
 var twitter = new Twitter(config);
 
-//Error Callback
-var error = function (err,response,body) {
-	console.log(err);
-};
-//Success Callback
-var success = function(data) {
-	var parsedData = JSON.parse(data);
-	var i = 0;
-	while(parsedData.length > i ) {
-		console.log(parsedData[i].text);
-		i++
-	};
-};
 // API Calls
-twitter.getUserTimeline({screen_name:"eltonlawls",count:"4"}, error, success);
+function getUserTimeline(screen_name,count,error,success) {
+	twitter.getUserTimeline({
+		screen_name:screen_name,
+		count:count
+	}, error, success);
+};
+
+
+module.exports ={
+	getUserTimeline:getUserTimeline
+}
 
